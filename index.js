@@ -3,7 +3,7 @@ var Commands = require('./modules/CommandList');
 var GameServer = require('./GameServer');
 
 // Init variables
-var showConsole = true;
+var showConsole = false;
 
 // Start msg
 console.log("[Game] Ogar3 - An open source Agar.io server implementation based on ogar!");
