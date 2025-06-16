@@ -1,0 +1,5 @@
+OGar Server - Game Mode: Free For All - Running Time: 163sec
+ID:    1, Nick: [BOT] Vinesauce, Score:    746, Cells: 11, Status: 1 IP: BOT
+ID:    2, Nick: [BOT] Luxembourg, Score:    161, Cells:  1, Status: 1 IP: BOT
+ID:    3, Nick: [BOT] Pewdiepie, Score:    567, Cells: 12, Status: 1 IP: BOT
+ID:    5, Nick: doge           , Score:     29, Cells:  1, Status: 0 IP: 127.0.0.1
