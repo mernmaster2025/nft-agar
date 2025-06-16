@@ -1,0 +1,31 @@
+<link href="assets/css/gallery.css" rel="stylesheet">
+
+<div class="row center">
+    <ul id="skinGallery"></ul>
+</div>
+
+<script>
+    const skinImages = [
+        "doge.png",
+    ];
+
+    const gallery = document.getElementById("skinGallery");
+
+    skinImages.forEach(filename => {
+        const name = filename.replace('.png', '');
+        const li = document.createElement("li");
+        li.className = "skin";
+        li.setAttribute("data-dismiss", "modal");
+
+        li.onclick = () => {
+            document.getElementById("nick").value = name;
+        };
+
+        li.innerHTML = `
+            <div class="circular" style='background-image: url("../skins/${filename}")'></div>
+            <h4 class="title">${name}</h4>
+        `;
+
+        gallery.appendChild(li);
+    });
+</script>
