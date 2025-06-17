@@ -304,6 +304,26 @@
         }
     }
 
+    function wsReconnect() {
+        if (ws) {
+            ws.onopen = null;
+            ws.onmessage = null;
+            ws.onclose = null;
+            try {
+                ws.close()
+            } catch (b) { }
+            ws = null
+        }
+        var c = CONNECTION_URL;
+        wsUrl = (useHttps ? "wss://" : "ws://") + c;
+        ws = new WebSocket(wsUrl);
+        ws.binaryType = "arraybuffer";
+        ws.onopen = onWsOpen;
+        ws.onmessage = onWsMessage;
+        ws.onclose = onWsClose;
+        ws.onerror = onWsError;
+    }
+
     function wsConnect(wsUrl) {
         if (ws) {
             ws.onopen = null;
@@ -330,6 +350,7 @@
         ws.onopen = onWsOpen;
         ws.onmessage = onWsMessage;
         ws.onclose = onWsClose;
+        ws.onerror = onWsError;
     }
 
     function prepareData(a) {
@@ -364,12 +385,26 @@
         // STATS = JSON.parse(httpGet((useHttps ? "https://" : "http://") + location.host + '/api/stats.txt'));
         // document.getElementById("title").innerHTML = STATS.title;
         // document.title = STATS.title
+        retryCount = 0;
         log.info("Connection successful!")
     }
 
-    function onWsClose() {
-        setTimeout(showConnecting, delay);
-        delay *= 1.5;
+    function onWsClose(event) {
+        console.warn('[WebSocket] Closed', event.reason);
+        if (retryCount < maxRetries) {
+            setTimeout(() => {
+                retryCount++;
+                console.log(`[WebSocket] Reconnecting... attempt #${retryCount}`);
+                wsReconnect();
+            }, reconnectDelay);
+        } else {
+            setTimeout(showConnecting, delay);
+            delay *= 1.5;    
+        }
+    }
+
+    function onWsError(event) {
+        console.error('[WebSocket] Error', event);
     }
 
     function onWsMessage(msg) {
@@ -1008,6 +1043,11 @@
         Y = -1,
         cb = 0,
         timestamp = 0,
+
+        retryCount = 0,
+        maxRetries = 5,
+        reconnectDelay = 0.1,
+
         userNickName = null,
         leftPos = 0,
         topPos = 0,
