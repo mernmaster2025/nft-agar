@@ -1,7 +1,7 @@
 (function (wHandle, wjQuery) {
     ONLY_CLIENT = false;
-    var CONNECTION_URL = location.host
-    SKIN_URL = "./skins/", // Skin Directory
+    var CONNECTION_URL = location.host,
+        SKIN_URL = "./skins/", // Skin Directory
         STATS = ""
 
     wHandle.setserver = function (arg) {
@@ -361,9 +361,9 @@
         msg.setUint32(1, 0, true);
         wsSend(msg);
         sendNickName();
-        STATS = JSON.parse(httpGet((useHttps ? "https://" : "http://") + location.host + '/api/stats.txt'));
-        document.getElementById("title").innerHTML = STATS.title;
-        document.title = STATS.title
+        // STATS = JSON.parse(httpGet((useHttps ? "https://" : "http://") + location.host + '/api/stats.txt'));
+        // document.getElementById("title").innerHTML = STATS.title;
+        // document.title = STATS.title
         log.info("Connection successful!")
     }
 
@@ -1131,7 +1131,7 @@
     };
     fetch('skinList.txt').then(resp => resp.text()).then(data => {
         const skins = data.split(',').filter(name => name.length > 0);
-        console.log(skins);
+        // console.log(skins);
         for (var i = 0; i < skins.length; i++) {
             if (-1 == knownNameDict.indexOf(skins[i])) {
                 knownNameDict.push(skins[i]);
@@ -1378,7 +1378,6 @@
                         skinName = this._skin.substring(1);
                     }
                 }
-
                 if (showSkin && skinName || skinName.startsWith("i/") != '' && -1 != knownNameDict.indexOf(skinName)) {
                     if (!skins.hasOwnProperty(skinName)) {
                         skins[skinName] = new Image;

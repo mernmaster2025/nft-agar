@@ -1,5 +1,12 @@
-OGar Server - Game Mode: Free For All - Running Time: 163sec
-ID:    1, Nick: [BOT] Vinesauce, Score:    746, Cells: 11, Status: 1 IP: BOT
-ID:    2, Nick: [BOT] Luxembourg, Score:    161, Cells:  1, Status: 1 IP: BOT
-ID:    3, Nick: [BOT] Pewdiepie, Score:    567, Cells: 12, Status: 1 IP: BOT
-ID:    5, Nick: doge           , Score:     29, Cells:  1, Status: 0 IP: 127.0.0.1
+OGar Server - Game Mode: Free For All - Running Time: 125sec
+ID:    1, Nick: [BOT] Lithuania, Score:    212, Cells:  1, Status: 1 IP: BOT
+ID:    2, Nick: [BOT] Taiwan   , Score:    203, Cells:  1, Status: 1 IP: BOT
+ID:    3, Nick: [BOT] Austria  , Score:    166, Cells:  1, Status: 1 IP: BOT
+ID:    4, Nick: [BOT] Romania  , Score:    154, Cells:  1, Status: 1 IP: BOT
+ID:    5, Nick: [BOT] Nasa     , Score:    167, Cells:  1, Status: 1 IP: BOT
+ID:    6, Nick: [BOT] 8ch      , Score:    289, Cells:  8, Status: 1 IP: BOT
+ID:    7, Nick: [BOT] 2ch      , Score:    153, Cells:  1, Status: 1 IP: BOT
+ID:    8, Nick: [BOT] Canada   , Score:    134, Cells:  1, Status: 1 IP: BOT
+ID:    9, Nick: [BOT] Greece   , Score:    190, Cells:  1, Status: 1 IP: BOT
+ID:   10, Nick: [BOT] Sealand  , Score:    463, Cells:  1, Status: 1 IP: BOT
+ID:   14, Nick: judgment       , Score:     55, Cells:  1, Status: 1 IP: 127.0.0.1
