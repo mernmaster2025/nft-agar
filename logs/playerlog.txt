@@ -1,11 +1,12 @@
-OGar Server - Game Mode: Free For All - Running Time: 17sec
-ID:    1, Nick: [BOT] Belgium  , Score:     40, Cells:  1, Status: 1 IP: BOT
-ID:    2, Nick: [BOT] India    , Score:     28, Cells:  1, Status: 1 IP: BOT
-ID:    3, Nick: [BOT] Peru     , Score:     40, Cells:  1, Status: 1 IP: BOT
-ID:    4, Nick: [BOT] Netherlands, Score:     30, Cells:  1, Status: 1 IP: BOT
-ID:    5, Nick: [BOT] Nasa     , Score:     44, Cells:  1, Status: 1 IP: BOT
-ID:    6, Nick: [BOT] Somalia  , Score:     19, Cells:  1, Status: 1 IP: BOT
-ID:    7, Nick: [BOT] Greece   , Score:     34, Cells:  1, Status: 1 IP: BOT
-ID:    8, Nick: [BOT] USA      , Score:     43, Cells:  1, Status: 1 IP: BOT
-ID:    9, Nick: [BOT] Japan    , Score:     35, Cells:  1, Status: 1 IP: BOT
-ID:   10, Nick: [BOT] Facepunch, Score:     27, Cells:  1, Status: 1 IP: BOT
+OGar Server - Game Mode: Free For All - Running Time: 125sec
+ID:    1, Nick: [BOT] Lithuania, Score:    212, Cells:  1, Status: 1 IP: BOT
+ID:    2, Nick: [BOT] Taiwan   , Score:    203, Cells:  1, Status: 1 IP: BOT
+ID:    3, Nick: [BOT] Austria  , Score:    166, Cells:  1, Status: 1 IP: BOT
+ID:    4, Nick: [BOT] Romania  , Score:    154, Cells:  1, Status: 1 IP: BOT
+ID:    5, Nick: [BOT] Nasa     , Score:    167, Cells:  1, Status: 1 IP: BOT
+ID:    6, Nick: [BOT] 8ch      , Score:    289, Cells:  8, Status: 1 IP: BOT
+ID:    7, Nick: [BOT] 2ch      , Score:    153, Cells:  1, Status: 1 IP: BOT
+ID:    8, Nick: [BOT] Canada   , Score:    134, Cells:  1, Status: 1 IP: BOT
+ID:    9, Nick: [BOT] Greece   , Score:    190, Cells:  1, Status: 1 IP: BOT
+ID:   10, Nick: [BOT] Sealand  , Score:    463, Cells:  1, Status: 1 IP: BOT
+ID:   14, Nick: judgment       , Score:     55, Cells:  1, Status: 1 IP: 127.0.0.1
